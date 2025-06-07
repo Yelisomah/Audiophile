@@ -20,12 +20,7 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+            "assets": ["src/favicon-32x32.png","src/assets"],
             "styles": [
               "src/styles.css"
             ],
@@ -78,16 +73,15 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+            "assets": ["src/favicon-32X32.png","src/assets"],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           }
         }
       }

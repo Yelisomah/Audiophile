@@ -1,0 +1,17 @@
+footer {
+    width: 100%;
+    height: auto;
+}
+.main{
+    width: 80%;
+    align-self: center;
+    display: flex;
+    /* align-items: ; */
+    /* justify-content: space-between; */ 
+}
+.top{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
