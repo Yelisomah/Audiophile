@@ -1,1 +1,37 @@
-<p>navbar works!</p>
+<nav>
+    <div class="main">
+        <div class="logo">
+            <img src="../../assets/shared/desktop/logo.svg" alt="Audiophile Logo">
+        </div>
+        <div class="nav-links">
+            <a routerLink="/" routerLinkActive="active">HOME</a>
+            <a routerLink="/headphones" routerLinkActive="active">HEADPHONES</a>
+            <a routerLink="/speakers" routerLinkActive="active">SPEAKERS</a>
+            <a routerLink="/earphones" routerLinkActive="active">EARPHONES</a>
+        </div>
+        <div class="cart">
+            <a routerLink="/cart" class="cart-link">
+                <img src="../../assets/shared/desktop/icon-cart.svg" alt="Cart Icon">
+                <span class="cart-count" *ngIf="cartService.cartItems.length > 0">
+                    {{ cartService.cartItems.length }}
+                </span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- <div class="hamburger" (click)="toggleMenu()">
+        <img src="../../assets/shared/mobile/icon-hamburger.svg" alt="Menu Icon">     
+    </div>
+    <div class="mobile-menu" [class.active]="isMenuOpen">
+        <a routerLink="/" routerLinkActive="active" (click)="closeMenu()">HOME</a>
+        <a routerLink="/headphones" routerLinkActive="active" (click)="closeMenu()">HEADPHONES</a>
+        <a routerLink="/speakers" routerLinkActive="active" (click)="closeMenu()">SPEAKERS</a>
+        <a routerLink="/earphones" routerLinkActive="active" (click)="closeMenu()">EARPHONES</a>
+        <a routerLink="/cart" class="cart-link" (click)="closeMenu()">
+            <img src="../../assets/shared/desktop/icon-cart.svg" alt="Cart Icon">
+            <span class="cart-count" *ngIf="cartService.cartItems.length > 0">
+                {{ cartService.cartItems.length }} -->
+            <!-- </span>
+        </a>
+    </div>         --> 
+</nav>

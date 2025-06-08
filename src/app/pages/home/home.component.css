@@ -1,9 +1,9 @@
 .main{
     width: 100%;
-    
+    background-color: #fafafa;
 }
-.container-one{
+.categories{
     width: 80%;
-    height: 5rem;
+    /* height: 5rem; */
     
 }
