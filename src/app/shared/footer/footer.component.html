@@ -5,10 +5,15 @@
                 <img src="../../assets/shared/desktop/logo.svg" alt="">
             </div>
             <div class="nav-links">
-                <a href="#">HOME</a>
-                <a href="#">HEADPHONES</a>
-                <a href="#">SPEAKERS</a>
-                <a href="#">EARPHONES</a>
+                <!-- <a routerLink="home">HOME</a> -->
+                <!-- <a routerLink="/home" routerLinkActive="active">HOME</a> -->
+                 <a routerLink="home" routerLinkActive="active">HOME</a>
+                <a routerLink="/headphones" routerLinkActive="active">HEADPHONES</a>
+                <a routerLink="/speakers" routerLinkActive="active">SPEAKERS</a>
+                <a routerLink="/earphones" routerLinkActive="active">EARPHONES</a>
+                <!-- <a routerLink="headphones">HEADPHONES</a>
+                <a routerLink="speakers">SPEAKERS</a>
+                <a routerLink="earphones">EARPHONES</a> -->
             </div>
         </div>
         <div class="down">
@@ -21,6 +26,6 @@
                 <a href="#"><img src="../../assets/shared/desktop/icon-instagram.svg" alt=""></a>
             </div>
         </div>
-        <p style="color: #ffffff; font-family: manrope medium;font-size: 18px; margin-top: -.8rem;">Copyright 2021. All Rights Reserved</p>
+        <p style="color: #ffffff; font-family: manrope medium;font-size: 18px; margin-top: -.8rem;">Copyright {{ currentYear }}. All Rights Reserved</p>
     </div>
 </footer>

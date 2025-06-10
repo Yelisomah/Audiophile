@@ -1,9 +1,11 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { CartService } from '../../core/services/cart.service';
+import { CommonModule } from '@angular/common';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
