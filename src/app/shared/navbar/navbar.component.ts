@@ -68,7 +68,6 @@ export class NavbarComponent {
     // event.preventDefault();
     this.router.navigate(['headphones']);
   }
-
   onClickSpeakers(event: MouseEvent): void {
     // event.preventDefault();
     this.router.navigate(['speakers']);

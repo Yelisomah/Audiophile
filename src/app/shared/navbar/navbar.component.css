@@ -1,6 +1,8 @@
 nav{
     background-color: #101010;
     width: 100%;
+    display: flex;
+    gap: 2rem;
 }
 .main{
     width: 80%;

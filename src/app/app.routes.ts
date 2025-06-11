@@ -6,9 +6,10 @@ import { SpeakersComponent } from './pages/speakers/speakers.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 
+
 export const routes: Routes = [
     {   
-        path: '', 
+        path: 'home', 
         redirectTo: 'home', 
         pathMatch: 'full' 
     },
