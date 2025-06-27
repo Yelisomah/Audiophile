@@ -4,10 +4,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+     width: 80%;
+    margin: 0 10%;
 }
 .categories{
-    width: 80%;
-    margin: 0 10%;
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,9 +44,9 @@
     top: -6rem;
 }
 .hero-1, .hero-2, .hero-3, .last-h{
-    width: 80%;
+    /* width: 80%; */
     height: auto;
-    margin: 0 10%;
+    /* margin: 0 10%; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
