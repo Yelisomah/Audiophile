@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { CartComponent } from '../../pages/cart/cart.component';
+import { CartComponent } from '../../pages/cart/cart.component';
 import { CartService } from '../../core/services/cart.service';
 import { RouterLinkActive, RouterLink, Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -81,21 +81,21 @@ export class NavbarComponent {
     // event.preventDefault();
     this.router.navigate(['cart']);
   }
-  isMenuOpen = false;
-  isCartOpen = false;
-  isCartEmpty(): boolean {
-    return this.cartService.getCartItems().length === 0;
-  }
-  openCart(): void {
-    this.isCartOpen = true;
-  }
-  toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
+  // isMenuOpen = false;
+  // isCartOpen = false;
+  // isCartEmpty(): boolean {
+  //   return this.cartService.getCartItems().length === 0;
+  // }
+  // openCart(): void {
+  //   this.isCartOpen = true;
+  // }
+  // toggleMenu(): void {
+  //   this.isMenuOpen = !this.isMenuOpen;
+  // }
 
-  closeMenu(): void {
-    this.isMenuOpen = false;
-  }
+  // closeMenu(): void {
+  //   this.isMenuOpen = false;
+  // }
 
 
 

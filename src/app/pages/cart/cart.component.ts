@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { CartService } from '../../core/services/cart.service';
+// import { CartService } from '../../core/services/cart.service';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 
@@ -10,16 +10,16 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './cart.component.css'
 })
 
-export class CartComponent implements OnInit {
-  cartItems: any[] = [];
+export class CartComponent {
+  // cartItems: any[] = [];
 
-  constructor(private cartService: CartService) {}
+  // constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {
-    this.cartItems = this.cartService.getCartItems();
-  }
+  // ngOnInit(): void {
+  //   this.cartItems = this.cartService.getCartItems();
+  // }
 
-  getTotal(): number {
-    return this.cartItems.reduce((sum, item) => sum + item.price, 0);
-  }
+  // getTotal(): number {
+  //   return this.cartItems.reduce((sum, item) => sum + item.price, 0);
+  // }
 }

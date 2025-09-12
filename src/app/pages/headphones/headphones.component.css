@@ -7,16 +7,28 @@
     gap: 3rem;
 }
 .headphones{
+    width: 100%;
     display: flex;
     flex-direction: row;
     height: 30rem;
-    border: 2px dotted red;
+    gap: 2rem;
+    justify-content: space-between;
+    /* border: 2px dotted red; */
+}
+.headphones .left img, .headphones .right img{
+    width: 100%;
+    height: 100%;
+     border-radius: 10px;
 }
 .headphones .left, .headphones .right{
     width: 100%;
     height: 100%;
 }
-.headphones .left img, .headphones .right img{
+/* .headphones .top .left, .headphones .top .right, .headphones .middle .left, .headphones .middle .right, .headphones .bottom .left, .headphones .bottom .rigth{
+    width: 100%;
+    height: 100%;
+} */
+/* .headphones .left img, .headphones .right img{
     width: 100%;
     width: 100%;
-}
+} */

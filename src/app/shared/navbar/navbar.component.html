@@ -1,23 +1,21 @@
 <nav>
     <div class="main">
         <div class="logo">
-            <img src="../../assets/shared/desktop/logo.svg" alt="Audiophile Logo">
+            <a routerLink="home" routerLinkActive="active">
+                <img src="/shared/desktop/logo.svg" alt="Audiophile Logo">
+            </a>
         </div>
+
         <div class="nav-links">
-             <!-- [routerLinkActiveOptions]="{exact: true}" 
-              (click)="onClickHome($event)"-->
-            <!-- <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="routerLinkActiveOptions">HOME</a> -->
-            <!-- <a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="routerLinkActiveOptions">HOME</a> -->
-            <!-- <a  routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a> -->
             <a (click)="onClickHome($event)" routerLinkActive="active" [routerLinkActiveOptions]="routerLinkActiveOptions">HOME</a>
             <a (click)="onClickHeadphones($event)" routerLink="/headphones" routerLinkActive="active">HEADPHONES</a>
-            <!-- <a (click)="onClickHomes($event)" routerLink="/homes" routerLinkActive="active">HOMES</a> -->
             <a (click)="onClickSpeakers($event)" routerLink="/speakers" routerLinkActive="active">SPEAKERS</a>
             <a (click)="onClickEarphones($event)" routerLink="/earphones" routerLinkActive="active">EARPHONES</a>
         </div>
+
         <div class="cart">
-            <a (click)="onClickCart($event)" routerLink="/cart" class="cart-link">
-                <img src="../../assets/shared/desktop/icon-cart.svg" alt="Cart Icon">
+            <a (click)="onClickCart($event)" routerLink="/cart" routerLinkActive="active" class="cart-link">
+                <img src="/shared/desktop/icon-cart.svg" alt="Cart Icon">
                 <span class="cart-count" *ngIf="cartService.cartItems.length > 0">
                     {{ cartService.cartItems.length }}
                 </span>
